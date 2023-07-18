@@ -18,7 +18,6 @@ public class Rettangolo {
     Rettangolo(int base, int altezza){
         this.base = base;
         this.altezza = altezza;
-
     }
 
     // METODI
@@ -31,14 +30,18 @@ public class Rettangolo {
     }
 
     void disegna(){
-        for (int i = 0; i <= base; i++){
+        for (int i = 1; i <= base-1; i++){
             System.out.print("o");
         }
 
-
-        for (int i = 0; i <= altezza; i++){
+        for (int i = 0; i <= altezza-1; i++){
             System.out.println("o");
-        } for (int j = 0; j <= base; j++){
+            for(int j = 1; j <= base-1; j++){
+                System.out.print(" ");
+            } System.out.println("o");
+        }
+
+        for (int i = 0; i <= base-1; i++){
             System.out.print("o");
         }
     }
