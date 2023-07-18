@@ -30,6 +30,18 @@ public class Rettangolo {
         return 2 * (base + altezza);
     }
 
+    void disegna(){
+        for (int i = 0; i <= base; i++){
+            System.out.print("o");
+        }
+
+
+        for (int i = 0; i <= altezza; i++){
+            System.out.println("o");
+        } for (int j = 0; j <= base; j++){
+            System.out.print("o");
+        }
+    }
 
     @Override
     public String toString() {
