@@ -12,8 +12,7 @@ public class Rettangolo {
     // VARIABILI
     int base;
     int altezza;
-    double area;
-    double perimetro;
+
 
     // COSTRUTTORI
     Rettangolo(int base, int altezza){
@@ -22,14 +21,15 @@ public class Rettangolo {
 
     }
 
-    //METODI
-    //calcolaArea(){
+    // METODI
+    double calcolaArea(){
+        return base * altezza;
+    }
 
-    //}
+    double calcolaPerimetro(){
+        return 2 * (base + altezza);
+    }
 
-    //calcolaPerimetro(){
-
-    //}
 
     @Override
     public String toString() {

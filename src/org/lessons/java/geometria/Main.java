@@ -6,10 +6,22 @@ package org.lessons.java.geometria;
 *BONUS Aggiungere alla classe Rettangolo un metodo disegna() che stampa in console il rettangolo con le sue dimensioni, come nell’immagine allegata
  */
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Rettangolo mioRettangolo = new Rettangolo(20,5);
-        System.out.println(mioRettangolo);
+        // ISTANZA RETTANGOLO
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("Inserisci una base: ");
+        int baseInput = Integer.parseInt(scan.nextLine());
+
+        System.out.println("Inserisci un'altezza: ");
+        int altezzaInput = Integer.parseInt(scan.nextLine());
+
+        Rettangolo mioRettangolo = new Rettangolo(baseInput, altezzaInput);
+
+        System.out.println("L'area del rettangolo è: " + mioRettangolo.calcolaArea());
+        System.out.println("Il perimetro del rettangolo è: " + mioRettangolo.calcolaPerimetro());
     }
 }
