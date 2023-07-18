@@ -9,4 +9,33 @@ package org.lessons.java.geometria;
 
 
 public class Rettangolo {
+    // VARIABILI
+    int base;
+    int altezza;
+    double area;
+    double perimetro;
+
+    // COSTRUTTORI
+    Rettangolo(int base, int altezza){
+        this.base = base;
+        this.altezza = altezza;
+
+    }
+
+    //METODI
+    //calcolaArea(){
+
+    //}
+
+    //calcolaPerimetro(){
+
+    //}
+
+    @Override
+    public String toString() {
+        return "Rettangolo{" +
+                "base=" + base +
+                ", altezza=" + altezza +
+                '}';
+    }
 }

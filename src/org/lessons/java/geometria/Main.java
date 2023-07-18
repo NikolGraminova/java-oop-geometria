@@ -8,6 +8,8 @@ package org.lessons.java.geometria;
 
 public class Main {
     public static void main(String[] args) {
+        Rettangolo mioRettangolo = new Rettangolo(20,5);
+        System.out.println(mioRettangolo);
 
     }
 }
