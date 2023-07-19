@@ -13,18 +13,19 @@ public class Main {
         // ISTANZA RETTANGOLO
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Inserisci una base: ");
-        int baseInput = Integer.parseInt(scan.nextLine());
+        System.out.println("Enter width: ");
+        int widthInput = Integer.parseInt(scan.nextLine());
 
-        System.out.println("Inserisci un'altezza: ");
-        int altezzaInput = Integer.parseInt(scan.nextLine());
+        System.out.println("Enter height: ");
+        int heightInput = Integer.parseInt(scan.nextLine());
 
-        Rettangolo mioRettangolo = new Rettangolo(baseInput, altezzaInput);
+        Rectangle myRectangle = new Rectangle(widthInput, heightInput);
 
         // STAMPA
-        System.out.println("L'area del rettangolo è: " + mioRettangolo.calcolaArea());
-        System.out.println("Il perimetro del rettangolo è: " + mioRettangolo.calcolaPerimetro());
+        System.out.println("The area is: " + myRectangle.getArea());
+        System.out.println("The perimeter is: " + myRectangle.getPerimeter());
 
-        mioRettangolo.disegna();
+        myRectangle.draw('o');
     }
 }
+
